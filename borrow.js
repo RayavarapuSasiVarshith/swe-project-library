@@ -29,11 +29,18 @@ document.getElementById('borrowForm').addEventListener('submit', function(event)
 
     // Display confirmation message with line breaks
     document.getElementById('borrowConfirmation').innerHTML = `
+        <br>
         <p><strong>User ID:</strong> ${userID}</p>
+        <br>
         <p><strong>User Name:</strong> ${userName}</p>
+        <br>
         <p><strong>Book ID:</strong> ${bookID}</p>
+        <br>
         <p><strong>Book Title:</strong> "${bookTitle}"</p>
+        <br>
         <p><strong>Genre:</strong> ${genre}</p>
+        <br>
         <p><strong>Total Books Borrowed:</strong> ${borrowedBooksCount}</p>
+        <br>
     `;
 });
