@@ -9,10 +9,15 @@ document.getElementById('returnForm').addEventListener('submit', function(event)
 
     // Display return confirmation message with line breaks
     document.getElementById('returnConfirmation').innerHTML = `
+        <br>
         <p><strong>User ID:</strong> ${userIDReturn}</p>
+        <br>
         <p><strong>Book ID:</strong> ${bookIDReturn}</p>
+        <br>
         <p><strong>Return Date:</strong> ${returnDate}</p>
+        <br>
         <p><strong>Condition:</strong> ${condition}</p>
+        <br>
         <p><em>Book Returned Successfully!</em></p>
     `;
 });
