@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Book - Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="borrow.css">
+    <script>
+        if (!localStorage.getItem('loggedIn')) {
+            alert('Access denied. Please log in first.');
+            window.location.href = 'login.html'; // Redirect to login page
+        }
+    </script>
+</head>
+<body>
+    <!-- Include the header -->
+    <?php include 'home.html'; ?>
+
+    <!-- <section id="borrow" class="page">
+        <h2>Borrow a Book</h2>
+        <p>Borrow books from our collection. Simply enter your user ID and the book ID to check out materials.</p>
+        <form id="borrowForm">
+            <label for="userID">User ID:</label>
+            <input type="text" id="userID" name="userID" required> -->
+            <!-- Other form fields... -->
+            <!-- <button type="submit">Borrow Book</button>
+        </form>
+        <div id="borrowConfirmation"></div>
+    </section> -->
+    <!-- Header Section (Combined from header.html) -->
+     
+    <header>
+        <h1><img id="icon" src="book.png" alt="Library Icon">Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="borrow.html">Borrow Book</a></li>
+                <li><a href="return.html">Return Book</a></li>
+                <li><a href="catalog.html">Manage Catalog</a></li>
+                <li><a href="reports.html">Generate Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="borrow" class="page">
+        <h2>Borrow a Book</h2>
+        <br>
+        <p>Borrow books from our collection. Simply enter your user ID and the book ID to check out materials.</p>
+        <br>
+        <p>Complete the information below to borrow a book from the library. Make sure you provide accurate details for each field.</p>
+        <br>
+        <form id="borrowForm">
+            <label for="userID">User ID:</label>
+            <input type="text" id="userID" name="userID" required>
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="bookID">Book ID:</label>
+            <input type="text" id="bookID" name="bookID" required>
+
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <label for="borrowedBooksCount">Books Already Borrowed:</label>
+            <input type="number" id="borrowedBooksCount" name="borrowedBooksCount" min="0" required>
+
+            <button type="submit">Borrow Book</button>
+        </form>
+        <div id="borrowConfirmation"></div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="navigation.js" defer></script>
+    <script src="borrow.js" defer></script>
+</body>
+</html>

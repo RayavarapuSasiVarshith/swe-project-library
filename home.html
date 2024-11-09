@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Library Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body> -->
+    <!-- Include the header -->
+    <!-- <?php include 'header.html'; ?>
+
+    <section id="home" class="page active">
+        <h2>Welcome to the Library Management System</h2>
+        <p><b>Hello!</b> You can manage all library operations from one convenient location.</p>
+        <img src="books-2463779_1280.jpg" alt="Library" class="hero-image">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="js/navigation.js" defer></script>
+    <script src="js/home.js" defer></script> -->
+<!-- </body> -->
+<!-- </html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <script>
+        if (!localStorage.getItem('loggedIn')) {
+            alert('Access denied. Please log in first.');
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section (Combined from header.html) -->
+    <header>
+        <h1><img id="icon" src="book.png" alt="Library Icon">Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="borrow.html">Borrow Book</a></li>
+                <li><a href="return.html">Return Book</a></li>
+                <li><a href="catalog.html">Manage Catalog</a></li>
+                <li><a href="reports.html">Generate Reports</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page Content -->
+    <section id="home" class="page active">
+        <h2>Welcome to the Library Management System</h2>
+        <p><b>Hello!</b> You can manage all library operations from one convenient location.</p>
+        <br>
+        <img src="books-2463779_1280.jpg" alt="Library" class="hero-image">
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="navigation.js" defer></script>
+    <script src="home.js" defer></script>
+</body>
+</html>
