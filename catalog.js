@@ -26,13 +26,21 @@ document.getElementById('catalogForm').addEventListener('submit', function(event
 
     // Display catalog update message with line breaks
     document.getElementById('catalogUpdateMessage').innerHTML = `
+        
         <p><strong>Book ID:</strong> ${bookIDCatalog}</p>
+        <br>
         <p><strong>Book Title:</strong> "${bookTitleCatalog}"</p>
+        <br>
         <p><strong>Author:</strong> ${author}</p>
+        <br>
         <p><strong>Publisher:</strong> ${publisher}</p>
+        <br>
         <p><strong>Year Published:</strong> ${yearPublished}</p>
+        <br>
         <p><strong>Genre:</strong> ${genreCatalog}</p>
+        <br>
         <p><strong>Total Copies:</strong> ${totalCopies}</p>
+        <br>
         <p><em>Catalog Updated Successfully!</em></p>
     `;
 });
