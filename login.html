@@ -13,7 +13,7 @@
         <h1><img id="icon" src="book.png" alt="Library Icon">Library Management System</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="borrow.html">Borrow Book</a></li>
                 <li><a href="return.html">Return Book</a></li>
                 <li><a href="catalog.html">Manage Catalog</a></li>
@@ -46,7 +46,7 @@
             // Replace this with actual authentication logic
             if (username === 'admin' && password === 'password') {
                 localStorage.setItem('loggedIn', 'true');
-                window.location.href = 'home.html'; // Redirect to home after login
+                window.location.href = 'index.html'; // Redirect to home after login
             } else {
                 alert('Invalid credentials');
             }
